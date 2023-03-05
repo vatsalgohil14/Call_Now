@@ -13,6 +13,8 @@ const Card = ({ title, icon, children }) => {
 
       {children}
     </div>
+
+ 
   );
 };
 
