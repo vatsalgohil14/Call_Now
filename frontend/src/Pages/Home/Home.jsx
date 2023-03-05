@@ -14,6 +14,7 @@ const Home = () => {
     fontWeight: "bold",
     textDecoration: "none",
     marginLeft: "10px",
+    
   };
 
   const history = useHistory();
@@ -23,7 +24,7 @@ const Home = () => {
   }
   return (
     <div className={styles.cardWrapper}>
-      <Card title="Welcome to Video Calling" icon="loggo">
+      <Card title="Welcome to Kennected " icon="loggo">
         <p className={styles.text}>
           This is a great online platform where you can connect with your near
           and dear ones

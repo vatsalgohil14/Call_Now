@@ -27,7 +27,7 @@ const Navigation = () => {
     <nav className='container mx-20 mt-7'>
       <Link style={brandStyle} to="/">
         <img src="/Images/loggo.png" alt="logo" style={imageFont} />
-        <span style={logoText}>Video</span>
+        <span style={logoText}>Kennected</span>
       </Link>
     </nav>
   );
