@@ -1,0 +1,34 @@
+.subHeading{
+    color:rgb(71, 71, 74);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatarWrapper{
+    width: 110px;
+    height: 110px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.avatarImage{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.avatarInput{
+    display: none;
+}
+
+.avatarLabel{
+    color: #3d63c9;
+    display: inline-block;
+    margin: 20px 0;
+    cursor: pointer;
+    
+}
