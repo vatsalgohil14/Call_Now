@@ -6,10 +6,12 @@
 .pnp.js
 .env
 .DS_Store
+/storage
 
 
 # testing
 /coverage
+
 
 # production
 /build

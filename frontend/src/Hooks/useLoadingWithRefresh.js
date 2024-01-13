@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setAuth } from "../Store/authSlice";
+import { setAvatar } from "../Store/activateSlice";
 
 
 
@@ -16,6 +17,7 @@ export function useLoadingWithRefresh() {
           withCredentials: true,
         });
         dispatch(setAuth(data));
+        dispatch(setAvatar(data))
         setLoading(false);
       } catch (err) {
         console.log(err);

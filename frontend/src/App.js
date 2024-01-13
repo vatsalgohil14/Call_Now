@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import { useLoadingWithRefresh } from "./Hooks/useLoadingWithRefresh";
 import Loader from "./Components/Shared/Loader/Loader";
-
+import Room from "./Pages/Room/Room"
 
 // ye for trial banaye the par now we will get this for react redux
 // const isAuth = false;
@@ -28,6 +28,8 @@ function App() {
   ) : (
     <BrowserRouter>
       <Navigation />
+      <hr />
+      <br />
       <Switch>
         <GuestRoute path="/" exact>
           <Home />
@@ -40,6 +42,9 @@ function App() {
         </SemiProtectedRoute>
         <ProtectedRoute path="/rooms">
           <Rooms />
+        </ProtectedRoute>
+        <ProtectedRoute path="/room/:id">
+          <Room></Room>
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>
